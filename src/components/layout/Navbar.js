@@ -109,15 +109,22 @@ const Navbar = () => {
                     {/* Desktop menu */}
                     <div className="hidden md:flex md:items-center md:space-x-6">
                         <div className="flex space-x-4">
-                            <Link href="/about" className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200">
-                                About Us
-                            </Link>
                             <Link href="/gallery" className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200">
                                 Gallery
                             </Link>
+                            {/* <Link href="/gallery" className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                                Project
+                            </Link>
+                            <Link href="/gallery" className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                                News & Events
+                            </Link> */}
+                                                        
                             <Link href="/schemes" className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200">
                                 Schemes
                             </Link>
+                            {/* <Link href="/about" className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                                About Us
+                            </Link> */}
                         </div>
 
                         {loading || isLoading ? (

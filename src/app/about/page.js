@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import Footer from '../../components/layout/footer';
 export default function About() {
     const sponsorsData = [
         {
@@ -28,17 +28,6 @@ export default function About() {
     const teamMembers = [
         {
             id: 1,
-            name: 'Prof. Didier Aussel',
-            role: 'CEO & Founder',
-            image: '/images/team/aussel.png',
-            bio: 'With over 15 years of experience in sustainable energy.',
-            social: {
-                linkedin: 'https://linkedin.com/in/johndoe',
-                twitter: 'https://twitter.com/johndoe',
-            },
-        },
-        {
-            id: 2,
             name: 'Dr. L. Latchoomun',
             role: 'Technical Director',
             image: '/images/team/latchoomun.png',
@@ -48,6 +37,18 @@ export default function About() {
                 twitter: 'https://twitter.com/janesmith',
             },
         },
+        {
+            id: 2,
+            name: 'Prof. Didier Aussel',
+            role: 'CEO & Founder',
+            image: '/images/team/aussel.png',
+            bio: 'With over 15 years of experience in sustainable energy.',
+            social: {
+                linkedin: 'https://linkedin.com/in/johndoe',
+                twitter: 'https://twitter.com/johndoe',
+            },
+        },
+        
         {
             id: 3,
             name: 'Prof. David Rey',
@@ -256,6 +257,9 @@ export default function About() {
                     </div>
                 </div>
             </div>
+        <Footer />    
         </div>
+
+        
     );
 }
